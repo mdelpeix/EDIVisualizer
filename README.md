@@ -12,7 +12,7 @@ Features :
   - Search function in file in the current plugin selected
   - Drag and drop files function
   - Reset loading files
-  - New Plugin creation possible (see READMEPlugin.md for documentation and example)
+  - New Plugin creation possible (see [READMEPlugin.md](https://github.com/mdelpeix/EDIVisualizer/blob/master/READMEPlugin.md) for documentation and example)
   
 Plugin Edifact :
   - Use by default to load file with "edi" extension
