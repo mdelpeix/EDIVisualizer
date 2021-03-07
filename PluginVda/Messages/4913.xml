@@ -1,0 +1,1294 @@
+<?xml version="1.0"?>
+<vda>
+  <fileType>4913</fileType>
+  <keyWord>711</keyWord>
+  <rows>
+    <row>
+      <rowName>711</rowName>
+      <mandatory>Y</mandatory>
+      <repetition>1</repetition>
+      <level>1</level>
+      <description>Initial Record containing transmission data header of delivery note and transport data</description>
+      <fields>
+        <field>
+          <name>711-01</name>
+          <type>N</type>
+          <position>1</position>
+          <size>3</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Record type</description>
+        </field>
+        <field>
+          <name>711-02</name>
+          <type>N</type>
+          <position>4</position>
+          <size>2</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Version no.</description>
+        </field>
+        <field>
+          <name>711-03</name>
+          <type>AN</type>
+          <position>6</position>
+          <size>9</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Data Receiver ID / Customer ID</description>
+        </field>
+        <field>
+          <name>711-04</name>
+          <type>AN</type>
+          <position>15</position>
+          <size>9</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Data sender ID / Supplier ID</description>
+        </field>
+        <field>
+          <name>711-05</name>
+          <type>N</type>
+          <position>24</position>
+          <size>5</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Old transmission no.</description>
+        </field>
+        <field>
+          <name>711-06</name>
+          <type>N</type>
+          <position>29</position>
+          <size>5</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>New transmission no.</description>
+        </field>
+        <field>
+          <name>711-07</name>
+          <type>N</type>
+          <position>34</position>
+          <size>6</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Transmission date </description>
+        </field>
+        <field>
+          <name>711-08</name>
+          <type>AN</type>
+          <position>40</position>
+          <size>9</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Sub-supplier no.</description>
+        </field>
+        <field>
+          <name>711-09</name>
+          <type>AN</type>
+          <position>49</position>
+          <size>9</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Carrier ID</description>
+        </field>
+        <field>
+          <name>711-10</name>
+          <type>AN</type>
+          <position>58</position>
+          <size>1</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Key to stocklist</description>
+        </field>
+        <field>
+          <name>711-11</name>
+          <type>AN</type>
+          <position>59</position>
+          <size>1</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Delivery code</description>
+        </field>
+        <field>
+          <name>711-12</name>
+          <type>AN</type>
+          <position>60</position>
+          <size>69</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Empty</description>
+        </field>
+      </fields>
+    </row>
+    <row>
+      <rowName>712</rowName>
+      <mandatory>Y</mandatory>
+      <repetition>1</repetition>
+      <level>2</level>
+      <description>One-off transport data, once per shipment</description>
+      <fields>
+        <field>
+          <name>712-01</name>
+          <type>N</type>
+          <position>1</position>
+          <size>3</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Record type</description>
+        </field>
+        <field>
+          <name>712-02</name>
+          <type>N</type>
+          <position>4</position>
+          <size>2</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Version no.</description>
+        </field>
+        <field>
+          <name>712-03</name>
+          <type>AN</type>
+          <position>6</position>
+          <size>8</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Shipment Load Reference Number</description>
+        </field>
+        <field>
+          <name>712-04</name>
+          <type>AN</type>
+          <position>14</position>
+          <size>3</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Plant supplier</description>
+        </field>
+        <field>
+          <name>712-05</name>
+          <type>AN</type>
+          <position>17</position>
+          <size>14</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Carrier</description>
+        </field>
+        <field>
+          <name>712-06</name>
+          <type>N</type>
+          <position>31</position>
+          <size>6</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Carrier transfer date</description>
+        </field>
+        <field>
+          <name>712-07</name>
+          <type>N</type>
+          <position>37</position>
+          <size>4</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Carrier transfer time</description>
+        </field>
+        <field>
+          <name>712-08</name>
+          <type>N</type>
+          <position>41</position>
+          <size>7</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Gross shipment weight</description>
+        </field>
+        <field>
+          <name>712-09</name>
+          <type>N</type>
+          <position>48</position>
+          <size>7</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Net shipment weight </description>
+        </field>
+        <field>
+          <name>712-10</name>
+          <type>N</type>
+          <position>55</position>
+          <size>2</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Pre-payment of charges key</description>
+        </field>
+        <field>
+          <name>712-11</name>
+          <type>AN</type>
+          <position>57</position>
+          <size>1</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Carrier transmission key</description>
+        </field>
+        <field>
+          <name>712-12</name>
+          <type>N</type>
+          <position>58</position>
+          <size>4</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Number of packages</description>
+        </field>
+        <field>
+          <name>712-13</name>
+          <type>AN</type>
+          <position>62</position>
+          <size>14</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Transport partner ID</description>
+        </field>
+        <field>
+          <name>712-14</name>
+          <type>N</type>
+          <position>76</position>
+          <size>2</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Key to means of Transport</description>
+        </field>
+        <field>
+          <name>712-15</name>
+          <type>AN</type>
+          <position>78</position>
+          <size>25</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Means of transport number</description>
+        </field>
+        <field>
+          <name>712-16</name>
+          <type>AN</type>
+          <position>103</position>
+          <size>1</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Code for item 712, Pos. 17</description>
+        </field>
+        <field>
+          <name>712-17</name>
+          <type>AN</type>
+          <position>104</position>
+          <size>8</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Content in accordance with item in 712, Pos. 16</description>
+        </field>
+        <field>
+          <name>712-18</name>
+          <type>N</type>
+          <position>112</position>
+          <size>6</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Target Arrival date</description>
+        </field>
+        <field>
+          <name>712-19</name>
+          <type>N</type>
+          <position>118</position>
+          <size>4</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Target Arrival time</description>
+        </field>
+        <field>
+          <name>712-20</name>
+          <type>N</type>
+          <position>122</position>
+          <size>3</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Load metre</description>
+        </field>
+        <field>
+          <name>712-21</name>
+          <type>N</type>
+          <position>125</position>
+          <size>1</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Lorry type code</description>
+        </field>
+        <field>
+          <name>712-22</name>
+          <type>AN</type>
+          <position>126</position>
+          <size>3</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Empty</description>
+        </field>
+      </fields>
+    </row>
+    <row>
+      <rowName>713</rowName>
+      <mandatory>Y</mandatory>
+      <repetition>1</repetition>
+      <level>3</level>
+      <description>One-off data element of the delivery note, once per delivery note</description>
+      <fields>
+        <field>
+          <name>713-01</name>
+          <type>N</type>
+          <position>1</position>
+          <size>3</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Record type</description>
+        </field>
+        <field>
+          <name>713-02</name>
+          <type>N</type>
+          <position>4</position>
+          <size>2</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Version no.</description>
+        </field>
+        <field>
+          <name>713-03</name>
+          <type>N</type>
+          <position>6</position>
+          <size>8</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Delivery note number</description>
+        </field>
+        <field>
+          <name>713-04</name>
+          <type>N</type>
+          <position>14</position>
+          <size>6</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Despatch date</description>
+        </field>
+        <field>
+          <name>713-05</name>
+          <type>AN</type>
+          <position>20</position>
+          <size>5</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Unloading point</description>
+        </field>
+        <field>
+          <name>713-06</name>
+          <type>N</type>
+          <position>25</position>
+          <size>2</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Dispatch type</description>
+        </field>
+        <field>
+          <name>713-07</name>
+          <type>AN</type>
+          <position>27</position>
+          <size>4</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Customer reference number (LAB)</description>
+        </field>
+        <field>
+          <name>713-08</name>
+          <type>AN</type>
+          <position>31</position>
+          <size>12</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Contract/Order no. </description>
+        </field>
+        <field>
+          <name>713-09</name>
+          <type>N</type>
+          <position>43</position>
+          <size>2</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Process code</description>
+        </field>
+        <field>
+          <name>713-10</name>
+          <type>AN</type>
+          <position>45</position>
+          <size>4</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Empty</description>
+        </field>
+        <field>
+          <name>713-11</name>
+          <type>AN</type>
+          <position>49</position>
+          <size>3</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Customer plant</description>
+        </field>
+        <field>
+          <name>713-12</name>
+          <type>N</type>
+          <position>52</position>
+          <size>8</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Consigment</description>
+        </field>
+        <field>
+          <name>713-13</name>
+          <type>AN</type>
+          <position>52</position>
+          <size>9</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Goods receiver ID 60</description>
+        </field>
+        <field>
+          <name>713-14</name>
+          <type>AN</type>
+          <position>69</position>
+          <size>1</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Empty 2</description>
+        </field>
+        <field>
+          <name>713-15</name>
+          <type>AN</type>
+          <position>70</position>
+          <size>7</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Ship to/ Customer storage location  </description>
+        </field>
+        <field>
+          <name>713-16</name>
+          <type>AN</type>
+          <position>77</position>
+          <size>9</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Supplier ID</description>
+        </field>
+        <field>
+          <name>713-17</name>
+          <type>AN</type>
+          <position>86</position>
+          <size>14</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Point of assembling </description>
+        </field>
+        <field>
+          <name>713-18</name>
+          <type>AN</type>
+          <position>100</position>
+          <size>4</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Release no.</description>
+        </field>
+        <field>
+          <name>713-19</name>
+          <type>AN</type>
+          <position>104</position>
+          <size>6</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Customer reference</description>
+        </field>
+        <field>
+          <name>713-20</name>
+          <type>AN</type>
+          <position>110</position>
+          <size>14</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Customer reference number</description>
+        </field>
+        <field>
+          <name>713-21</name>
+          <type>AN</type>
+          <position>124</position>
+          <size>5</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Empty</description>
+        </field>
+      </fields>
+    </row>
+    <row>
+      <rowName>714</rowName>
+      <mandatory>Y</mandatory>
+      <repetition>1</repetition>
+      <level>4</level>
+      <description>delivery note position data, once per delivery note position</description>
+      <fields>
+        <field>
+          <name>714-01</name>
+          <type>N</type>
+          <position>1</position>
+          <size>3</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Record type</description>
+        </field>
+        <field>
+          <name>714-02</name>
+          <type>N</type>
+          <position>4</position>
+          <size>2</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Version number	</description>
+        </field>
+        <field>
+          <name>714-03</name>
+          <type>AN</type>
+          <position>6</position>
+          <size>22</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Customer reference number</description>
+        </field>
+        <field>
+          <name>714-04</name>
+          <type>AN</type>
+          <position>28</position>
+          <size>22</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Supplier reference number</description>
+        </field>
+        <field>
+          <name>714-05</name>
+          <type>N</type>
+          <position>50</position>
+          <size>3</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Country of origin </description>
+        </field>
+        <field>
+          <name>714-06</name>
+          <type>N</type>
+          <position>53</position>
+          <size>13</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Delivery quantity 1 </description>
+        </field>
+        <field>
+          <name>714-07</name>
+          <type>AN</type>
+          <position>66</position>
+          <size>2</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Unit of quantity 1 </description>
+        </field>
+        <field>
+          <name>714-08</name>
+          <type>N</type>
+          <position>68</position>
+          <size>13</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Delivery quantity 2 </description>
+        </field>
+        <field>
+          <name>714-09</name>
+          <type>AN</type>
+          <position>81</position>
+          <size>2</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Unit of quantity 2 </description>
+        </field>
+        <field>
+          <name>714-10</name>
+          <type>N</type>
+          <position>83</position>
+          <size>3</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>VAT rate</description>
+        </field>
+        <field>
+          <name>714-11</name>
+          <type>AN</type>
+          <position>86</position>
+          <size>1</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Empty 1</description>
+        </field>
+        <field>
+          <name>714-12</name>
+          <type>N</type>
+          <position>87</position>
+          <size>3</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Delivery note item number</description>
+        </field>
+        <field>
+          <name>714-13</name>
+          <type>AN</type>
+          <position>90</position>
+          <size>1</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Release key</description>
+        </field>
+        <field>
+          <name>714-14</name>
+          <type>AN</type>
+          <position>91</position>
+          <size>15</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Batch number</description>
+        </field>
+        <field>
+          <name>714-15</name>
+          <type>AN</type>
+          <position>106</position>
+          <size>1</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Code usage    </description>
+        </field>
+        <field>
+          <name>714-16</name>
+          <type>AN</type>
+          <position>107</position>
+          <size>8</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Dangerous goods code</description>
+        </field>
+        <field>
+          <name>714-17</name>
+          <type>AN</type>
+          <position>115</position>
+          <size>1</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Preference status</description>
+        </field>
+        <field>
+          <name>714-18</name>
+          <type>AN</type>
+          <position>116</position>
+          <size>1</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Dutiable goods	</description>
+        </field>
+        <field>
+          <name>714-19</name>
+          <type>AN</type>
+          <position>117</position>
+          <size>1</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Empty 2</description>
+        </field>
+        <field>
+          <name>714-20</name>
+          <type>AN</type>
+          <position>118</position>
+          <size>1</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Inventory status	</description>
+        </field>
+        <field>
+          <name>714-21</name>
+          <type>AN</type>
+          <position>119</position>
+          <size>2</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Modified version code</description>
+        </field>
+        <field>
+          <name>714-22</name>
+          <type>AN</type>
+          <position>121</position>
+          <size>8</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Original delivery note number</description>
+        </field>
+      </fields>
+    </row>
+    <row>
+      <rowName>718</rowName>
+      <mandatory>N</mandatory>
+      <repetition>N</repetition>
+      <level>5</level>
+      <description>Production number data</description>
+      <fields>
+        <field>
+          <name>718-01</name>
+          <type>N</type>
+          <position>1</position>
+          <size>3</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Record type</description>
+        </field>
+        <field>
+          <name>718-02</name>
+          <type>N</type>
+          <position>4</position>
+          <size>2</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Version number</description>
+        </field>
+        <field>
+          <name>718-03</name>
+          <type>N</type>
+          <position>8</position>
+          <size>8</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>delivery note number</description>
+        </field>
+        <field>
+          <name>718-04</name>
+          <type>AN</type>
+          <position>14</position>
+          <size>10</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Manufacturing reference number 1</description>
+        </field>
+        <field>
+          <name>718-05</name>
+          <type>AN</type>
+          <position>24</position>
+          <size>10</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Manufacturing reference number 2</description>
+        </field>
+        <field>
+          <name>718-06</name>
+          <type>AN</type>
+          <position>34</position>
+          <size>10</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Manufacturing reference number 3</description>
+        </field>
+        <field>
+          <name>718-07</name>
+          <type>AN</type>
+          <position>44</position>
+          <size>10</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Manufacturing reference number 4</description>
+        </field>
+        <field>
+          <name>718-08</name>
+          <type>AN</type>
+          <position>54</position>
+          <size>10</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Manufacturing reference number 5</description>
+        </field>
+        <field>
+          <name>718-09</name>
+          <type>AN</type>
+          <position>64</position>
+          <size>10</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Manufacturing reference number 6</description>
+        </field>
+        <field>
+          <name>718-10</name>
+          <type>AN</type>
+          <position>74</position>
+          <size>10</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Manufacturing reference number 7</description>
+        </field>
+        <field>
+          <name>718-11</name>
+          <type>AN</type>
+          <position>84</position>
+          <size>10</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Manufacturing reference number 8</description>
+        </field>
+        <field>
+          <name>718-12</name>
+          <type>AN</type>
+          <position>94</position>
+          <size>10</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Manufacturing reference number 9</description>
+        </field>
+        <field>
+          <name>718-13</name>
+          <type>AN</type>
+          <position>104</position>
+          <size>10</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Manufacturing reference number 10</description>
+        </field>
+        <field>
+          <name>718-14</name>
+          <type>AN</type>
+          <position>114</position>
+          <size>10</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Manufacturing reference number 11</description>
+        </field>
+        <field>
+          <name>718-15</name>
+          <type>AN</type>
+          <position>0</position>
+          <size>5</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Empty </description>
+        </field>
+      </fields>
+    </row>
+    <row>
+      <rowName>716</rowName>
+      <mandatory>N</mandatory>
+      <repetition>1</repetition>
+      <level>5</level>
+      <description>Text data</description>
+      <fields>
+        <field>
+          <name>716-01</name>
+          <type>N</type>
+          <position>1</position>
+          <size>3</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Record type</description>
+        </field>
+        <field>
+          <name>716-02</name>
+          <type>N</type>
+          <position>4</position>
+          <size>2</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Version number</description>
+        </field>
+        <field>
+          <name>716-03</name>
+          <type>AN</type>
+          <position>6</position>
+          <size>40</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Text 1</description>
+        </field>
+        <field>
+          <name>716-04</name>
+          <type>AN</type>
+          <position>46</position>
+          <size>40</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Text 2</description>
+        </field>
+        <field>
+          <name>716-05</name>
+          <type>AN</type>
+          <position>86</position>
+          <size>40</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Text 3</description>
+        </field>
+        <field>
+          <name>716-06</name>
+          <type>AN</type>
+          <position>126</position>
+          <size>3</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Empty</description>
+        </field>
+      </fields>
+    </row>
+    <row>
+      <rowName>715</rowName>
+      <mandatory>N</mandatory>
+      <repetition>N</repetition>
+      <level>6</level>
+      <description>For all packaging material used, as well as auxiliary packaging, a 715th record must be transmitted. Subsequent records and contents in representation of different forms of loading units are explained in the EDI Implementation Guidelines, detailed description and examples under "Instruction for packages in the delivery note and transport data"</description>
+      <fields>
+        <field>
+          <name>715-01</name>
+          <type>N</type>
+          <position>1</position>
+          <size>3</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Record type</description>
+        </field>
+        <field>
+          <name>715-02</name>
+          <type>N</type>
+          <position>4</position>
+          <size>2</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Version number	</description>
+        </field>
+        <field>
+          <name>715-03</name>
+          <type>AN</type>
+          <position>6</position>
+          <size>22</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Customer packaging type coded </description>
+        </field>
+        <field>
+          <name>715-04</name>
+          <type>AN</type>
+          <position>28</position>
+          <size>22</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Supplier packaging type coded </description>
+        </field>
+        <field>
+          <name>715-05</name>
+          <type>N</type>
+          <position>50</position>
+          <size>13</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Number of packaging</description>
+        </field>
+        <field>
+          <name>715-06</name>
+          <type>N</type>
+          <position>63</position>
+          <size>3</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Delivery note item no.</description>
+        </field>
+        <field>
+          <name>715-07</name>
+          <type>N</type>
+          <position>66</position>
+          <size>13</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Maximum quantity	</description>
+        </field>
+        <field>
+          <name>715-08</name>
+          <type>AN</type>
+          <position>79</position>
+          <size>9</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Package number from</description>
+        </field>
+        <field>
+          <name>715-09</name>
+          <type>AN</type>
+          <position>88</position>
+          <size>9</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Package number to </description>
+        </field>
+        <field>
+          <name>715-10</name>
+          <type>N</type>
+          <position>97</position>
+          <size>12</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Packaging dimensions	</description>
+        </field>
+        <field>
+          <name>715-11</name>
+          <type>N</type>
+          <position>109</position>
+          <size>1</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Stacking factor</description>
+        </field>
+        <field>
+          <name>715-12</name>
+          <type>AN</type>
+          <position>110</position>
+          <size>15</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Warehouse release number    </description>
+        </field>
+        <field>
+          <name>715-13</name>
+          <type>AN</type>
+          <position>125</position>
+          <size>1</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Label indicator</description>
+        </field>
+        <field>
+          <name>715-14</name>
+          <type>AN</type>
+          <position>126</position>
+          <size>1</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Packaging code</description>
+        </field>
+        <field>
+          <name>715-15</name>
+          <type>AN</type>
+          <position>127</position>
+          <size>1</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Property code</description>
+        </field>
+        <field>
+          <name>715-16</name>
+          <type>AN</type>
+          <position>128</position>
+          <size>1</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Empty</description>
+        </field>
+      </fields>
+    </row>
+    <row>
+      <rowName>717</rowName>
+      <mandatory>N</mandatory>
+      <repetition>N</repetition>
+      <level>5</level>
+      <description>Individual packaging data</description>
+      <fields>
+        <field>
+          <name>717-01</name>
+          <type>N</type>
+          <position>1</position>
+          <size>3</size>
+          <mandatory>N</mandatory>
+          <description>Record</description>
+        </field>
+        <field>
+          <name>717-02</name>
+          <type>N</type>
+          <position>4</position>
+          <size>2</size>
+          <mandatory>N</mandatory>
+          <description>Version</description>
+        </field>
+        <field>
+          <name>717-03</name>
+          <type>AN</type>
+          <position>6</position>
+          <size>15</size>
+          <mandatory>N</mandatory>
+          <description>Single package number</description>
+        </field>
+        <field>
+          <name>717-04</name>
+          <type>N</type>
+          <position>21</position>
+          <size>13</size>
+          <mandatory>N</mandatory>
+          <description>Delivery quantity</description>
+        </field>
+        <field>
+          <name>717-05</name>
+          <type>AN</type>
+          <position>34</position>
+          <size>2</size>
+          <mandatory>N</mandatory>
+          <description>Quantity unit</description>
+        </field>
+        <field>
+          <name>717-06</name>
+          <type>N</type>
+          <position>36</position>
+          <size>13</size>
+          <mandatory>N</mandatory>
+          <description>Delivery quantity</description>
+        </field>
+        <field>
+          <name>717-07</name>
+          <type>AN</type>
+          <position>49</position>
+          <size>2</size>
+          <mandatory>N</mandatory>
+          <description>Quantity unit</description>
+        </field>
+        <field>
+          <name>717-08</name>
+          <type>AN</type>
+          <position>51</position>
+          <size>15</size>
+          <mandatory>N</mandatory>
+          <description>Lot number</description>
+        </field>
+        <field>
+          <name>717-09</name>
+          <type>AN</type>
+          <position>66</position>
+          <size>63</size>
+          <mandatory>N</mandatory>
+          <description>Empty</description>
+        </field>
+      </fields>
+    </row>
+    <row>
+      <rowName>719</rowName>
+      <mandatory>N</mandatory>
+      <repetition>N</repetition>
+      <level>1</level>
+      <description>trailer label delivery note and transport data, once per transmission process</description>
+      <fields>
+        <field>
+          <name>719-01</name>
+          <type>N</type>
+          <position>1</position>
+          <size>3</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Record type	</description>
+        </field>
+        <field>
+          <name>719-02</name>
+          <type>N</type>
+          <position>4</position>
+          <size>2</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Version number</description>
+        </field>
+        <field>
+          <name>719-03</name>
+          <type>N</type>
+          <position>6</position>
+          <size>7</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Record type counter 711</description>
+        </field>
+        <field>
+          <name>719-04</name>
+          <type>N</type>
+          <position>13</position>
+          <size>7</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Record type counter 712</description>
+        </field>
+        <field>
+          <name>719-05</name>
+          <type>N</type>
+          <position>20</position>
+          <size>7</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Record type counter 713</description>
+        </field>
+        <field>
+          <name>719-06</name>
+          <type>N</type>
+          <position>27</position>
+          <size>7</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Record type counter 714</description>
+        </field>
+        <field>
+          <name>719-07</name>
+          <type>N</type>
+          <position>34</position>
+          <size>7</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Record type counter 715</description>
+        </field>
+        <field>
+          <name>719-08</name>
+          <type>N</type>
+          <position>41</position>
+          <size>7</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Record type counter 716</description>
+        </field>
+        <field>
+          <name>719-09</name>
+          <type>N</type>
+          <position>48</position>
+          <size>7</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Record type counter 718</description>
+        </field>
+        <field>
+          <name>719-10</name>
+          <type>N</type>
+          <position>55</position>
+          <size>7</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Record type counter 719</description>
+        </field>
+        <field>
+          <name>719-11</name>
+          <type>N</type>
+          <position>62</position>
+          <size>7</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Record type counter 717</description>
+        </field>
+        <field>
+          <name>719-12</name>
+          <type>AN</type>
+          <position>69</position>
+          <size>60</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Empty</description>
+        </field>
+      </fields>
+    </row>
+  </rows>
+</vda>

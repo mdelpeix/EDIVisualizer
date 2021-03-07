@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Message">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Title" type="xs:string" />
+        <xs:element name="Regex" type="xs:string" />
+        <xs:element name="fileType" type="xs:string" />
+        <xs:element name="Enregistrements">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="Enreg">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Label" type="xs:string" />
+                    <xs:element name="Libelle" type="xs:string" />
+                    <xs:element name="Details">
+                      <xs:complexType mixed="true">
+                        <xs:sequence minOccurs="0">
+                          <xs:element maxOccurs="unbounded" name="Detail" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Statut" type="xs:string" />
+                    <xs:element name="Repetitivite" type="xs:unsignedInt" />
+                    <xs:element name="Zones" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="Zone">
+                            <xs:complexType mixed="true">
+                              <xs:sequence>
+                                <xs:element name="ZoneReference" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                                <xs:element name="ZoneLabel" type="xs:string"  minOccurs="0" maxOccurs="1"/>
+                                <xs:element name="ZoneStatut" type="xs:string"  minOccurs="0" maxOccurs="1"/>
+                                <xs:element name="ZoneFormat" type="xs:string"  minOccurs="0" maxOccurs="1"/>
+                                <xs:element name="Fields" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element minOccurs="0" maxOccurs="unbounded" name="Field">
+                                        <xs:complexType mixed="true">
+                                          <xs:sequence>
+                                            <xs:element name="FieldReference" type="xs:string"  minOccurs="0" maxOccurs="1" />
+                                            <xs:element name="FieldLabel" type="xs:string"  minOccurs="0" maxOccurs="1" />
+                                            <xs:element name="FieldStatut" type="xs:string"  minOccurs="0" maxOccurs="1" />
+                                            <xs:element name="FieldFormat" type="xs:string"  minOccurs="0" maxOccurs="1" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

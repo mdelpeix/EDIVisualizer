@@ -1,0 +1,2264 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Message>
+  <Title>INVOICE V3 ODETTE</Title>
+  <Regex>UNH\+\w*\+INVOIC\:\w*\:\w*\:OD\'</Regex>
+  <fileType>INVOIC V3</fileType>
+  <Enregistrements>
+    <Enreg>
+      <Label>UNA</Label>
+      <Libelle>SERVICE STRING ADVICE</Libelle>
+      <Details>UNA segment define the characters used as separators and indicators for the interchange</Details>
+      <Statut>O</Statut>
+      <Repetitivite>1</Repetitivite>
+    </Enreg>
+    <Enreg>
+      <Label>UNB</Label>
+      <Libelle>INTERCHANGE HEADER</Libelle>
+      <Details>This segment is used to start, identify and specify an interchange</Details>
+      <Statut>M</Statut>
+      <Repetitivite>1</Repetitivite>
+      <Zones>
+        <Zone>
+          <ZoneReference>S001</ZoneReference>
+          <ZoneLabel>SYNTAX IDENTIFIER</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>0001</FieldReference>
+              <FieldLabel>Syntax indentifier</FieldLabel>
+              <FieldStatut>M</FieldStatut>
+              <FieldFormat>A4</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>0002</FieldReference>
+              <FieldLabel>Syntax version number</FieldLabel>
+              <FieldStatut>M</FieldStatut>
+              <FieldFormat>N1</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference>S002</ZoneReference>
+          <ZoneLabel>INTERCHANGE SENDER</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>0004</FieldReference>
+              <FieldLabel>Sender Identification</FieldLabel>
+              <FieldStatut>M</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>0007</FieldReference>
+              <FieldLabel>Partner identification code qualifier</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..4</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>0008</FieldReference>
+              <FieldLabel>Address for reverse routing</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..14</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference>S003</ZoneReference>
+          <ZoneLabel>INTERCHANGE RECIPIENT</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>0010</FieldReference>
+              <FieldLabel>Recipient Identification</FieldLabel>
+              <FieldStatut>M</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>0007</FieldReference>
+              <FieldLabel>Partner identification code qualifier</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..4</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>0014</FieldReference>
+              <FieldLabel>Routing address</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..14</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference>S004</ZoneReference>
+          <ZoneLabel>DATE/TIME OF PREPARATION</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>0017</FieldReference>
+              <FieldLabel>Date of preparation</FieldLabel>
+              <FieldStatut>M</FieldStatut>
+              <FieldFormat>N6</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>0019</FieldReference>
+              <FieldLabel>Time of preparation</FieldLabel>
+              <FieldStatut>M</FieldStatut>
+              <FieldFormat>N6</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference>0020</ZoneReference>
+          <ZoneLabel>INTERCHANGE CONTROL REFERENCE</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat>an..14</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>S005</ZoneReference>
+          <ZoneLabel>RECIPENT’S REFERENCE</ZoneLabel>
+          <ZoneStatut></ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>0022</FieldReference>
+              <FieldLabel>Recipient&apos;s reference/password</FieldLabel>
+              <FieldStatut>M</FieldStatut>
+              <FieldFormat>AN..14</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>0025</FieldReference>
+              <FieldLabel>Recipient&apos;s reference/password qualifier</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN 2</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>0026</FieldReference>
+              <FieldLabel>APPLICATION REFERENCE</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..14</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>0029</FieldReference>
+              <FieldLabel>Processing priority code</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>A1</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>0031</FieldReference>
+              <FieldLabel>Acknowledgement request</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>N1</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>0032</FieldReference>
+              <FieldLabel>Communications agreement ID</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>0035</FieldReference>
+              <FieldLabel>Test indicator</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>N1</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+      </Zones>
+    </Enreg>
+    <Enreg>
+      <Label>UNH</Label>
+      <Libelle>MESSAGE HEADER</Libelle>
+      <Details>This segment is used to head, identify and specify a message</Details>
+      <Statut>M</Statut>
+      <Repetitivite>1</Repetitivite>
+      <Zones>
+        <Zone>
+          <ZoneReference>0062</ZoneReference>
+          <ZoneLabel>Message reference number</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat>AN..14</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>S009</ZoneReference>
+          <ZoneLabel>MESSAGE IDENTIFIER</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>0065</FieldReference>
+              <FieldLabel>Message type identifier</FieldLabel>
+              <FieldStatut>M</FieldStatut>
+              <FieldFormat>AN..6</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>0052</FieldReference>
+              <FieldLabel>Message type version number</FieldLabel>
+              <FieldStatut>M</FieldStatut>
+              <FieldFormat>AN..3</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>0054</FieldReference>
+              <FieldLabel>Message type release number</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..3</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>0051</FieldReference>
+              <FieldLabel>Controlling agency</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..2</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>0057</FieldReference>
+              <FieldLabel>Association assigned code</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..6</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference>0068</ZoneReference>
+          <ZoneLabel>Common access reference</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..35</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>S010</ZoneReference>
+          <ZoneLabel>STATUS OF THE TRANSFER</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>0070</FieldReference>
+              <FieldLabel>Sequence message transfer number</FieldLabel>
+              <FieldStatut>M</FieldStatut>
+              <FieldFormat>N..2</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>0073</FieldReference>
+              <FieldLabel>First/last sequence message transfer Indication</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>A1</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+      </Zones>
+    </Enreg>
+    <Enreg>
+      <Label>MID</Label>
+      <Libelle>MESSAGE IDENTIFICATION</Libelle>
+      <Details>This segment is used to give the reference number of the document and the date of its generation</Details>
+      <Statut>M</Statut>
+      <Repetitivite>1</Repetitivite>
+      <Zones>
+        <Zone>
+          <ZoneReference>1004</ZoneReference>
+          <ZoneLabel>Document/message number</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat>AN..17</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>DOCUMENT DATE AND TIME</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>2007</FieldReference>
+              <FieldLabel>Document date/code</FieldLabel>
+              <FieldStatut>M</FieldStatut>
+              <FieldFormat>N6</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>2002</FieldReference>
+              <FieldLabel>Time</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>N4</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference>4426</ZoneReference>
+          <ZoneLabel>Authentication</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..35</ZoneFormat>
+        </Zone>
+      </Zones>
+    </Enreg>
+    <Enreg>
+      <Label>SDT</Label>
+      <Libelle>SELLER DETAILS</Libelle>
+      <Details>To give details of the seller such as coded or uncoded name and address, contacts</Details>
+      <Statut>M</Statut>
+      <Repetitivite>1</Repetitivite>
+      <Zones>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>Seller</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>3347</FieldReference>
+              <FieldLabel>Seller, coded</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..20</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3036</FieldReference>
+              <FieldLabel>Party Name</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124A</FieldReference>
+              <FieldLabel>Name and Address Line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124B</FieldReference>
+              <FieldLabel>Name and Address Line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124C</FieldReference>
+              <FieldLabel>Name and Address Line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124D</FieldReference>
+              <FieldLabel>Name and Address Line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3296</FieldReference>
+              <FieldLabel>Internal Id. No. allocated to a Trading Partner</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..17</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>Commercial Department or Employee</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>3413</ZoneReference>
+          <ZoneLabel>Department or Employee, coded</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..17</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>3412</ZoneReference>
+          <ZoneLabel>Department or Employee</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..35</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>3124A</ZoneReference>
+          <ZoneLabel>Name and Address Line</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..35</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>3124B</ZoneReference>
+          <ZoneLabel>Name and Address Line</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..35</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>3124C</ZoneReference>
+          <ZoneLabel>Name and Address Line</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..35</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>3124D</ZoneReference>
+          <ZoneLabel>Name and Address Line</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..35</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>Accounting Department or Employee</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>3413</ZoneReference>
+          <ZoneLabel>Department or Employee, coded</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..17</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>3412</ZoneReference>
+          <ZoneLabel>Department or Employee</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..35</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>3124A</ZoneReference>
+          <ZoneLabel>Name and Address Line</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..35</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>3124B</ZoneReference>
+          <ZoneLabel>Name and Address Line</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..35</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>3124C</ZoneReference>
+          <ZoneLabel>Name and Address Line</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..35</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>3124D</ZoneReference>
+          <ZoneLabel>Name and Address Line</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..35</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>3808</ZoneReference>
+          <ZoneLabel>VAT Registration Number</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..17</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>3207</ZoneReference>
+          <ZoneLabel>Country, coded</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>A2</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>Contact Details</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>3412</ZoneReference>
+          <ZoneLabel>Department or Employee</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..35</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>3928</ZoneReference>
+          <ZoneLabel>Telephone Number</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..17</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>3929</ZoneReference>
+          <ZoneLabel>Telephone Extension</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..17</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>3927</ZoneReference>
+          <ZoneLabel>Telex Number</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..17</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>3926</ZoneReference>
+          <ZoneLabel>Fax Number</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..17</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>3930</ZoneReference>
+          <ZoneLabel>Teletex Number</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..17</ZoneFormat>
+        </Zone>
+      </Zones>
+    </Enreg>
+    <Enreg>
+      <Label>LAI</Label>
+      <Libelle>Legal Additional Information</Libelle>
+      <Details></Details>
+      <Statut>C</Statut>
+      <Repetitivite>1</Repetitivite>
+      <Zones>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>Registration Tribunal</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>3164</FieldReference>
+              <FieldLabel>City Name</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3809</FieldReference>
+              <FieldLabel>Registration Number</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..17</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>Chamber of Commerce</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>3164</FieldReference>
+              <FieldLabel>City Name</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3809</FieldReference>
+              <FieldLabel>Registration Number</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..17</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>Registered Capital</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>5004</FieldReference>
+              <FieldLabel>Monetary Amount</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>N..15</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>6345</FieldReference>
+              <FieldLabel>Currency, coded</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>A3</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference>4440</ZoneReference>
+          <ZoneLabel>Free Text</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..70</ZoneFormat>
+        </Zone>
+      </Zones>
+    </Enreg>
+    <Enreg>
+      <Label>BDT</Label>
+      <Libelle>BUYER DETAILS</Libelle>
+      <Details>To give details of the buyer such as coded or uncoded name and address, contacts</Details>
+      <Statut>M</Statut>
+      <Repetitivite>1</Repetitivite>
+      <Zones>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>BUYER</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>3003</FieldReference>
+              <FieldLabel>Buyer, coded</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..20</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3036</FieldReference>
+              <FieldLabel>Party name</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124A</FieldReference>
+              <FieldLabel>Name and address line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124B</FieldReference>
+              <FieldLabel>Name and address line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124C</FieldReference>
+              <FieldLabel>Name and address line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124D</FieldReference>
+              <FieldLabel>Name and address line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3296</FieldReference>
+              <FieldLabel>Internal Id. n° allocated by a</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..17</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>COMMERCIAL DEPARTMENT OR EMPLOYEE</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>3413</FieldReference>
+              <FieldLabel>Department or employee</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..17</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3412</FieldReference>
+              <FieldLabel>Department or employee</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124A</FieldReference>
+              <FieldLabel>Name and address line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124B</FieldReference>
+              <FieldLabel>Name and address line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124C</FieldReference>
+              <FieldLabel>Name and address line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124D</FieldReference>
+              <FieldLabel>Name and address line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>ACCOUNTING DEPARTMENT OR EMPLYEE</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>3413</FieldReference>
+              <FieldLabel>Department or employee,coded</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..17</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3412</FieldReference>
+              <FieldLabel>Department or employee</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124A</FieldReference>
+              <FieldLabel>Name and address line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124B</FieldReference>
+              <FieldLabel>Name and address line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124C</FieldReference>
+              <FieldLabel>Name and address line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124D</FieldReference>
+              <FieldLabel>Name and address line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference>3808</ZoneReference>
+          <ZoneLabel>VAT registration number</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..17</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>3207</ZoneReference>
+          <ZoneLabel>Country , coded</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>A2</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>CONTACT DETAILS</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>3808</FieldReference>
+              <FieldLabel>VAT registration number</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..17</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3207</FieldReference>
+              <FieldLabel>Country , coded</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>A2</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3412</FieldReference>
+              <FieldLabel>Department or employee,coded</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3928</FieldReference>
+              <FieldLabel>Telephone number</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..17</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3929</FieldReference>
+              <FieldLabel>Telephone extension</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..17</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3927</FieldReference>
+              <FieldLabel>Telex number</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..17</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3926</FieldReference>
+              <FieldLabel>Fax number</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..17</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3930</FieldReference>
+              <FieldLabel>Teletex number</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..17</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+      </Zones>
+    </Enreg>
+    <Enreg>
+      <Label>SBK</Label>
+      <Libelle>Seller&apos;s Bank Details</Libelle>
+      <Details></Details>
+      <Statut>C</Statut>
+      <Repetitivite>1</Repetitivite>
+      <Zones>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>Bank Identification</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>3434</FieldReference>
+              <FieldLabel>Financial Institution Branch Number</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..17</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3432</FieldReference>
+              <FieldLabel>Financial Institution Name</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124A</FieldReference>
+              <FieldLabel>Name and Address Line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124B</FieldReference>
+              <FieldLabel>Name and Address Line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124C</FieldReference>
+              <FieldLabel>Name and Address Line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124D</FieldReference>
+              <FieldLabel>Name and Address Line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference>3194</ZoneReference>
+          <ZoneLabel>Account Holder Number</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..17</ZoneFormat>
+        </Zone>
+      </Zones>
+    </Enreg>
+    <Enreg>
+      <Label>PBK</Label>
+      <Libelle>Payee&apos;s Bank Details</Libelle>
+      <Details></Details>
+      <Statut>C</Statut>
+      <Repetitivite>1</Repetitivite>
+      <Zones>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>Bank Identification</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>3434</FieldReference>
+              <FieldLabel>Financial Institution Branch Number</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..17</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3432</FieldReference>
+              <FieldLabel>Financial Institution Name</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124A</FieldReference>
+              <FieldLabel>Name and Address Line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124B</FieldReference>
+              <FieldLabel>Name and Address Line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124C</FieldReference>
+              <FieldLabel>Name and Address Line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124D</FieldReference>
+              <FieldLabel>Name and Address Line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference>3194</ZoneReference>
+          <ZoneLabel>Account Holder Number</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..17</ZoneFormat>
+        </Zone>
+      </Zones>
+    </Enreg>
+    <Enreg>
+      <Label>PAT</Label>
+      <Libelle>Payee Details</Libelle>
+      <Details></Details>
+      <Statut>C</Statut>
+      <Repetitivite>1</Repetitivite>
+      <Zones>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>Payee</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>3371</FieldReference>
+              <FieldLabel>Payee, coded</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..20</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3036</FieldReference>
+              <FieldLabel>Party Name</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124A</FieldReference>
+              <FieldLabel>Name and Address Line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124B</FieldReference>
+              <FieldLabel>Name and Address Line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124C</FieldReference>
+              <FieldLabel>Name and Address Line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124D</FieldReference>
+              <FieldLabel>Name and Address Line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3296</FieldReference>
+              <FieldLabel>Internal Id. No. allocated to a Trading Partner</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..17</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference>3412</ZoneReference>
+          <ZoneLabel>Department or Employee</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..35</ZoneFormat>
+        </Zone>
+      </Zones>
+    </Enreg>
+    <Enreg>
+      <Label>PAI</Label>
+      <Libelle>Payment Instructions</Libelle>
+      <Details></Details>
+      <Statut>C</Statut>
+      <Repetitivite>1</Repetitivite>
+      <Zones>
+        <Zone>
+          <ZoneReference>6345</ZoneReference>
+          <ZoneLabel>Currency, coded</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat>A3</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>6181</ZoneReference>
+          <ZoneLabel>Payment Currency, coded</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>A3</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>VAT Jurisdiction and Category</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>3207</FieldReference>
+              <FieldLabel>Country, coded</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>A2</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>5305</FieldReference>
+              <FieldLabel>Duty/Tax/Fee Category, coded</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..3</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference>2221</ZoneReference>
+          <ZoneLabel>Tax Point Date, coded</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>N6</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>2481</ZoneReference>
+          <ZoneLabel>Payment Due Date, coded</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>N6</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>4439</ZoneReference>
+          <ZoneLabel>Payment Conditions, coded</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..3</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>4461</ZoneReference>
+          <ZoneLabel>Payment Means, coded</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN2</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>Terms Time Information</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>2475</FieldReference>
+              <FieldLabel>Payment Time Reference Code</FieldLabel>
+              <FieldStatut>M</FieldStatut>
+              <FieldFormat>AN..3</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>2009</FieldReference>
+              <FieldLabel>Time Relation Code</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>N2</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>2151</FieldReference>
+              <FieldLabel>Type of Period, coded</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..3</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>2152</FieldReference>
+              <FieldLabel>Number of Periods</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>N..3</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>Terms of Payment</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>4276</ZoneReference>
+          <ZoneLabel>Terms of Payment</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat>AN..35</ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>4276A</FieldReference>
+              <FieldLabel>Terms of Payment</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>4276B</FieldReference>
+              <FieldLabel>Terms of Payment</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>4276C</FieldReference>
+              <FieldLabel>Terms of Payment</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>4276D</FieldReference>
+              <FieldLabel>Terms of Payment</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>4276E</FieldReference>
+              <FieldLabel>Terms of Payment</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>4276F</FieldReference>
+              <FieldLabel>Terms of Payment</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>4276G</FieldReference>
+              <FieldLabel>Terms of Payment</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>4276H</FieldReference>
+              <FieldLabel>Terms of Payment</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>4276I</FieldReference>
+              <FieldLabel>Terms of Payment</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+      </Zones>
+    </Enreg>
+    <Enreg>
+      <Label>STL</Label>
+      <Libelle>Payment by Instalments</Libelle>
+      <Details></Details>
+      <Statut>C</Statut>
+      <Repetitivite>999</Repetitivite>
+      <Zones>
+        <Zone>
+          <ZoneReference>2481</ZoneReference>
+          <ZoneLabel>Payment Due Date, coded</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>N6</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>Terms Time Information</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>2475</FieldReference>
+              <FieldLabel>Payment Time Reference Code</FieldLabel>
+              <FieldStatut>M</FieldStatut>
+              <FieldFormat>AN..3</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>2009</FieldReference>
+              <FieldLabel>Time Relation Code</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>N2</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>2151</FieldReference>
+              <FieldLabel>Type of Period, coded</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..3</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>2152</FieldReference>
+              <FieldLabel>Number of Periods</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>N..3</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>Amount</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>5082</FieldReference>
+              <FieldLabel>Payment Amount</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>N..15</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>5484</FieldReference>
+              <FieldLabel>Percentage of Invoice Payable</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>N..7</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+      </Zones>
+    </Enreg>
+    <Enreg>
+      <Label>RAD</Label>
+      <Libelle>Reference to Despatch Advice</Libelle>
+      <Details></Details>
+      <Statut>M</Statut>
+      <Repetitivite>999</Repetitivite>
+      <Zones>
+        <Zone>
+          <ZoneReference>1004</ZoneReference>
+          <ZoneLabel>Document Number</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat>AN..17</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>Document Date and Time</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>2007</FieldReference>
+              <FieldLabel>Document Date, coded</FieldLabel>
+              <FieldStatut>M</FieldStatut>
+              <FieldFormat>N6</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>2002</FieldReference>
+              <FieldLabel>Time</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>N4</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference>4426</ZoneReference>
+          <ZoneLabel>Authentication</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..35</ZoneFormat>
+        </Zone>
+      </Zones>
+    </Enreg>
+    <Enreg>
+      <Label>CSG</Label>
+      <Libelle>CONSIGNEE DETAILS</Libelle>
+      <Details>To give details of the consignee such as coded or uncoded name and address, contacts and to provide delivery location details</Details>
+      <Statut>M</Statut>
+      <Repetitivite>999</Repetitivite>
+      <Zones>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>CONSIGNEE</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>3133</FieldReference>
+              <FieldLabel>Consignee, coded</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..20</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3036</FieldReference>
+              <FieldLabel>Party name</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124A</FieldReference>
+              <FieldLabel>Name and address line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124B</FieldReference>
+              <FieldLabel>Name and address line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124C</FieldReference>
+              <FieldLabel>Name and address line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124D</FieldReference>
+              <FieldLabel>Name and address line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3296</FieldReference>
+              <FieldLabel>Internal Id. n° allocated by a partner</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..17</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>FINAL DELIVERY POINT</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>3921</FieldReference>
+              <FieldLabel>Final Delivery Point, coded</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..17</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3920</FieldReference>
+              <FieldLabel>Final delivery point</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..35 </FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124A</FieldReference>
+              <FieldLabel>Name and address line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124B</FieldReference>
+              <FieldLabel>Name and address line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124C</FieldReference>
+              <FieldLabel>Name and address line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124D</FieldReference>
+              <FieldLabel>Name and address line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..35</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>ADDITIONAL DESTINATION DETAILS</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>3923</FieldReference>
+              <FieldLabel>Additional Destination Details, coded</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..17</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3922</FieldReference>
+              <FieldLabel>Additional destination Details</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124A</FieldReference>
+              <FieldLabel>Name and address line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124B</FieldReference>
+              <FieldLabel>Name and address line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124C</FieldReference>
+              <FieldLabel>Name and address line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3124D</FieldReference>
+              <FieldLabel>Name and address line</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..35</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference>3207</ZoneReference>
+          <ZoneLabel>COUNTRY,DETAILS</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>a2</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>CONTACT DETAILS</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>3412</FieldReference>
+              <FieldLabel>Department or employee,coded</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3928</FieldReference>
+              <FieldLabel>Telephone number</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..17</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3929</FieldReference>
+              <FieldLabel>Telephone extension</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..17</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3927</FieldReference>
+              <FieldLabel>Telex number</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..17</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3926</FieldReference>
+              <FieldLabel>Fax number</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..17</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3930</FieldReference>
+              <FieldLabel>Teletex number</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..17</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+      </Zones>
+    </Enreg>
+    <Enreg>
+      <Label>DET</Label>
+      <Libelle>Delivery Terms</Libelle>
+      <Details></Details>
+      <Statut>C</Statut>
+      <Repetitivite>1</Repetitivite>
+      <Zones>
+        <Zone>
+          <ZoneReference>8067</ZoneReference>
+          <ZoneLabel>Mode of Transport, coded</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>N..2</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>4110</ZoneReference>
+          <ZoneLabel>Incoterms Code</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>A3</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>Incoterms</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>3019</FieldReference>
+              <FieldLabel>Incoterms Place, coded</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..8</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3018</FieldReference>
+              <FieldLabel>Incoterms Place</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..32</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>Terms of Delivery</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>4052A</FieldReference>
+              <FieldLabel>Terms of Delivery</FieldLabel>
+              <FieldStatut>M</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>4052B</FieldReference>
+              <FieldLabel>Terms of Delivery</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>4052C</FieldReference>
+              <FieldLabel>Terms of Delivery</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>4052D</FieldReference>
+              <FieldLabel>Terms of Delivery</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>4052E</FieldReference>
+              <FieldLabel>Terms of Delivery</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+      </Zones>
+    </Enreg>
+    <Enreg>
+      <Label>ISC</Label>
+      <Libelle>Sundry Charges</Libelle>
+      <Details></Details>
+      <Statut>C</Statut>
+      <Repetitivite>999</Repetitivite>
+      <Zones>
+        <Zone>
+          <ZoneReference>5803</ZoneReference>
+          <ZoneLabel>Allowance/Charge Type, coded</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat>N4</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>5164</ZoneReference>
+          <ZoneLabel>Invoice Additional Cost  Specification</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..35</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>5804</ZoneReference>
+          <ZoneLabel>Charge Item Amount</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat>N..15</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>5056</ZoneReference>
+          <ZoneLabel>Payment Discount</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>N..10</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>5122</ZoneReference>
+          <ZoneLabel>Value Added Tax Rate</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>N..7</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>Sundry Charge Quantity and Unit</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>6256</FieldReference>
+              <FieldLabel>Freight Quantity</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>N..9</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>6410</FieldReference>
+              <FieldLabel>Measure Unit Specifier</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..3</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>Sundry Charge Rate Per Unit</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>5126</FieldReference>
+              <FieldLabel>Freight Rate</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>N..11</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>5284</FieldReference>
+              <FieldLabel>Unit Price Basis</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>N..9</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>6410</FieldReference>
+              <FieldLabel>Measure Unit Specifier</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..3</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>Order or Contract  Identification</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>1022</FieldReference>
+              <FieldLabel>Order Number</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..17</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>2001</FieldReference>
+              <FieldLabel>Date, coded</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>N6</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference>5818</ZoneReference>
+          <ZoneLabel>Gross Freight Rate</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>N..11</ZoneFormat>
+        </Zone>
+      </Zones>
+    </Enreg>
+    <Enreg>
+      <Label>ARD</Label>
+      <Libelle>ARTICLE DETAILS</Libelle>
+      <Details>To identify an article</Details>
+      <Statut>M</Statut>
+      <Repetitivite>999</Repetitivite>
+      <Zones>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>ARTICLE IDENTIFICATION</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>7304</FieldReference>
+              <FieldLabel>Buyer’s article number</FieldLabel>
+              <FieldStatut>M</FieldStatut>
+              <FieldFormat>an..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>7194</FieldReference>
+              <FieldLabel>Seller’s article number</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>7008A</FieldReference>
+              <FieldLabel>Item description</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>7008B</FieldReference>
+              <FieldLabel>Item description</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>7008C</FieldReference>
+              <FieldLabel>Item description</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>7008D</FieldReference>
+              <FieldLabel>Item description</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>7008E</FieldReference>
+              <FieldLabel>Item description</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..35</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>QUANTITY AND UNIT</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>6270</FieldReference>
+              <FieldLabel>Quantity delivered</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>n..10</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>6410</FieldReference>
+              <FieldLabel>Measure unit qualifier</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..3</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>ORDER OR CONTACT ID</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>1022</FieldReference>
+              <FieldLabel>Order number</FieldLabel>
+              <FieldStatut>M</FieldStatut>
+              <FieldFormat>an..17</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>2001</FieldReference>
+              <FieldLabel>Order date</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>n6</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>COUNTRY OF ORIGIN</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>3239</FieldReference>
+              <FieldLabel>Country of origin , coded</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>a2</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>3238</FieldReference>
+              <FieldLabel>Country of origin</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..17</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>FREE TEXT</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>4440A</FieldReference>
+              <FieldLabel>Text</FieldLabel>
+              <FieldStatut>M</FieldStatut>
+              <FieldFormat>an..70</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>4440B</FieldReference>
+              <FieldLabel>Text</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..70</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>4440C</FieldReference>
+              <FieldLabel>Text</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..70</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>TECHNICAL STATUS</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>7860</FieldReference>
+              <FieldLabel>Design revision number</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>1376</FieldReference>
+              <FieldLabel>Engineering change number</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>an..17</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>2001</FieldReference>
+              <FieldLabel>Date</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>n6</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+      </Zones>
+    </Enreg>
+    <Enreg>
+      <Label>PRI</Label>
+      <Libelle>Line Items Invoice Price Details</Libelle>
+      <Details></Details>
+      <Statut>M</Statut>
+      <Repetitivite>1</Repetitivite>
+      <Zones>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>Price per Unit</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>5110</FieldReference>
+              <FieldLabel>Unit Price</FieldLabel>
+              <FieldStatut>M</FieldStatut>
+              <FieldFormat>N..15</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>5284</FieldReference>
+              <FieldLabel>Unit Price Basis</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>N..9</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>6410</FieldReference>
+              <FieldLabel>Measure Unit Specifier</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..3</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference>5116</ZoneReference>
+          <ZoneLabel>Item Amount</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat>N..15</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>5806</ZoneReference>
+          <ZoneLabel>Gross Unit Price</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>N..11</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>Rebate/Addition</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>5424A</FieldReference>
+              <FieldLabel>Allowance/Charge Percentage</FieldLabel>
+              <FieldStatut>M</FieldStatut>
+              <FieldFormat>N..7</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>5424B</FieldReference>
+              <FieldLabel>Allowance/Charge Percentage</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>N..7</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>5424C</FieldReference>
+              <FieldLabel>Allowance/Charge Percentage</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>N..7</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference>5056</ZoneReference>
+          <ZoneLabel>Payment Discount</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>N..10</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>5122</ZoneReference>
+          <ZoneLabel>Value Added Tax Rate</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>N..7</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>VAT Jurisdiction and Category</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>3207</FieldReference>
+              <FieldLabel>Country, coded</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>A2</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>5305</FieldReference>
+              <FieldLabel>Duty/Tax/Fee Category, coded</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..3</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference>5490</ZoneReference>
+          <ZoneLabel>Value Added Tax Amount</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>N..15</ZoneFormat>
+        </Zone>
+      </Zones>
+    </Enreg>
+    <Enreg>
+      <Label>DAI</Label>
+      <Libelle>General Article Information</Libelle>
+      <Details></Details>
+      <Statut>C</Statut>
+      <Repetitivite>1</Repetitivite>
+      <Zones>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>Weight</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>6160</FieldReference>
+              <FieldLabel>Net Weight</FieldLabel>
+              <FieldStatut>M</FieldStatut>
+              <FieldFormat>N..11</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>6410</FieldReference>
+              <FieldLabel>Measure Unit Specifier</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..3</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference>7282</ZoneReference>
+          <ZoneLabel>Tariff Code Number (Customs)</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>N..10</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>Customs Declared Value</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>5116</FieldReference>
+              <FieldLabel>Item Amount</FieldLabel>
+              <FieldStatut>M</FieldStatut>
+              <FieldFormat>N..15</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>6345</FieldReference>
+              <FieldLabel>Currency, coded</FieldLabel>
+              <FieldStatut>M</FieldStatut>
+              <FieldFormat>A3</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>Nature of Transaction</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>4423</FieldReference>
+              <FieldLabel>Nature of Transaction, coded</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..8</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>4422</FieldReference>
+              <FieldLabel>Nature of Transaction</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..17</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+        <Zone>
+          <ZoneReference>9213</ZoneReference>
+          <ZoneLabel>Type of Duty Regime, coded</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..8</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>1106</ZoneReference>
+          <ZoneLabel>Import Licence Number</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..17</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>1208</ZoneReference>
+          <ZoneLabel>Export Licence Number</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>AN..17</ZoneFormat>
+        </Zone>
+      </Zones>
+    </Enreg>
+    <Enreg>
+      <Label>GIN</Label>
+      <Libelle>Goods Identity Number</Libelle>
+      <Details></Details>
+      <Statut>C</Statut>
+      <Repetitivite>999</Repetitivite>
+      <Zones>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>Identity Numbers</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>7402A</FieldReference>
+              <FieldLabel>Identity Number</FieldLabel>
+              <FieldStatut>M</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>7402B</FieldReference>
+              <FieldLabel>Identity Number</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>7402C</FieldReference>
+              <FieldLabel>Identity Number</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>7402D</FieldReference>
+              <FieldLabel>Identity Number</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>7402E</FieldReference>
+              <FieldLabel>Identity Number</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>7402F</FieldReference>
+              <FieldLabel>Identity Number</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>7402G</FieldReference>
+              <FieldLabel>Identity Number</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>7402H</FieldReference>
+              <FieldLabel>Identity Number</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>7402I</FieldReference>
+              <FieldLabel>Identity Number</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>7402J</FieldReference>
+              <FieldLabel>Identity Number</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..35</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+      </Zones>
+    </Enreg>
+    <Enreg>
+      <Label>VAT</Label>
+      <Libelle>VAT/Tax Trailer</Libelle>
+      <Details></Details>
+      <Statut>M</Statut>
+      <Repetitivite>999</Repetitivite>
+      <Zones>
+        <Zone>
+          <ZoneReference>5338</ZoneReference>
+          <ZoneLabel>Amount Subject to Tax</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat>N..15</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>5122</ZoneReference>
+          <ZoneLabel>Value Added Tax Rate</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat>N..7</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>5490</ZoneReference>
+          <ZoneLabel>Value Added Tax Amount</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat>N..15</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>VAT Jurisdiction and Category</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>3207</FieldReference>
+              <FieldLabel>Country, coded</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>A2</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>5305</FieldReference>
+              <FieldLabel>Duty/Tax/Fee Category, coded</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..3</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+      </Zones>
+    </Enreg>
+    <Enreg>
+      <Label>IAA</Label>
+      <Libelle>Invoice in Advance Amount</Libelle>
+      <Details></Details>
+      <Statut>C</Statut>
+      <Repetitivite>1</Repetitivite>
+      <Zones>
+        <Zone>
+          <ZoneReference>5004</ZoneReference>
+          <ZoneLabel>Monetary Amount</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat>N..15</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>6345</ZoneReference>
+          <ZoneLabel>Currency, coded</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>A3</ZoneFormat>
+        </Zone>
+      </Zones>
+    </Enreg>
+    <Enreg>
+      <Label>TLR</Label>
+      <Libelle>Transaction Trailer</Libelle>
+      <Details></Details>
+      <Statut>M</Statut>
+      <Repetitivite>1</Repetitivite>
+      <Zones>
+        <Zone>
+          <ZoneReference>5214</ZoneReference>
+          <ZoneLabel>Article Items Total</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat>N..15</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>5068</ZoneReference>
+          <ZoneLabel>Invoice Amount</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat>N..15</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>5338</ZoneReference>
+          <ZoneLabel>Amount Subject to Tax</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>N..15</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>5490</ZoneReference>
+          <ZoneLabel>Value Added Tax Amount</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>N..15</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>5140</ZoneReference>
+          <ZoneLabel>Invoice Additional Amount</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>N..15</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>5454</ZoneReference>
+          <ZoneLabel>Payment Discount Amount</ZoneLabel>
+          <ZoneStatut>C</ZoneStatut>
+          <ZoneFormat>N..15</ZoneFormat>
+        </Zone>
+      </Zones>
+    </Enreg>
+    <Enreg>
+      <Label>FTX</Label>
+      <Libelle>Free Text</Libelle>
+      <Details></Details>
+      <Statut>C</Statut>
+      <Repetitivite>999</Repetitivite>
+      <Zones>
+        <Zone>
+          <ZoneReference></ZoneReference>
+          <ZoneLabel>Free Text</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat></ZoneFormat>
+          <Fields>
+            <Field>
+              <FieldReference>4440A</FieldReference>
+              <FieldLabel>Free Text</FieldLabel>
+              <FieldStatut>M</FieldStatut>
+              <FieldFormat>AN..70</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>4440B</FieldReference>
+              <FieldLabel>Free Text</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..70</FieldFormat>
+            </Field>
+            <Field>
+              <FieldReference>4440C</FieldReference>
+              <FieldLabel>Free Text</FieldLabel>
+              <FieldStatut>C</FieldStatut>
+              <FieldFormat>AN..70</FieldFormat>
+            </Field>
+          </Fields>
+        </Zone>
+      </Zones>
+    </Enreg>
+    <Enreg>
+      <Label>UNT</Label>
+      <Libelle>MESSAGE TRAILER</Libelle>
+      <Details>This segment is a mandatory UN/ODETTE segment. It must always be the last segment in the message</Details>
+      <Statut>M</Statut>
+      <Repetitivite>1</Repetitivite>
+      <Zones>
+        <Zone>
+          <ZoneReference>74</ZoneReference>
+          <ZoneLabel>Number of segments in a message</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat>N..6</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>62</ZoneReference>
+          <ZoneLabel>Message reference number</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat>AN..14</ZoneFormat>
+        </Zone>
+      </Zones>
+    </Enreg>
+    <Enreg>
+      <Label>UNZ</Label>
+      <Libelle>INTERCHANGE TRAILER</Libelle>
+      <Details>This segment is a mandatory UN/ODETTE segment. It must always be the last segment in the interchange</Details>
+      <Statut>M</Statut>
+      <Repetitivite>1</Repetitivite>
+      <Zones>
+        <Zone>
+          <ZoneReference>36</ZoneReference>
+          <ZoneLabel>INTERCHANGE CONTROL COUNT</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat>N..6</ZoneFormat>
+        </Zone>
+        <Zone>
+          <ZoneReference>20</ZoneReference>
+          <ZoneLabel>INTERCHANGE CONTROL REFERENCE</ZoneLabel>
+          <ZoneStatut>M</ZoneStatut>
+          <ZoneFormat>AN..14</ZoneFormat>
+        </Zone>
+      </Zones>
+    </Enreg>
+  </Enregistrements>
+</Message>

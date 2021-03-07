@@ -1,0 +1,610 @@
+<?xml version="1.0"?>
+<vda>
+  <fileType>4906</fileType>
+  <keyWord>811</keyWord>
+  <rows>
+    <row>
+      <rowName>811</rowName>
+      <mandatory>Y</mandatory>
+      <repetition>1</repetition>
+      <level>1</level>
+      <description>Header Record</description>
+      <fields>
+        <field>
+          <name>811-01</name>
+          <type>N</type>
+          <position>1</position>
+          <size>3</size>
+          <mandatory>Y</mandatory>
+          <defaultValue>811</defaultValue>
+          <description>Record Type</description>
+        </field>
+        <field>
+          <name>811-02</name>
+          <type>N</type>
+          <position>4</position>
+          <size>2</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>VDA version</description>
+        </field>
+        <field>
+          <name>811-03</name>
+          <type>AN</type>
+          <position>6</position>
+          <size>9</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>MBE number at supplier</description>
+        </field>
+        <field>
+          <name>811-04</name>
+          <type>AN</type>
+          <position>15</position>
+          <size>9</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Supplier number (LINDA)</description>
+        </field>
+        <field>
+          <name>811-05</name>
+          <type>N</type>
+          <position>24</position>
+          <size>5</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Transmission number old</description>
+        </field>
+        <field>
+          <name>811-06</name>
+          <type>N</type>
+          <position>29</position>
+          <size>5</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Transmission number new</description>
+        </field>
+        <field>
+          <name>811-07</name>
+          <type>N</type>
+          <position>34</position>
+          <size>6</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Date of Transmission</description>
+        </field>
+        <field>
+          <name>811-08</name>
+          <type>AN</type>
+          <position>40</position>
+          <size>20</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Vat number MBE</description>
+        </field>
+        <field>
+          <name>811-09</name>
+          <type>AN</type>
+          <position>60</position>
+          <size>20</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Vat number Supplier</description>
+        </field>
+        <field>
+          <name>811-10</name>
+          <type>AN</type>
+          <position>80</position>
+          <size>49</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Filler</description>
+        </field>
+      </fields>
+    </row>
+    <row>
+      <rowName>812</rowName>
+      <mandatory>Y</mandatory>
+      <repetition>1</repetition>
+      <level>1</level>
+      <description>Invoice Data</description>
+      <fields>
+        <field>
+          <name>812-01</name>
+          <type>N</type>
+          <position>1</position>
+          <size>3</size>
+          <mandatory>Y</mandatory>
+          <defaultValue>812</defaultValue>
+          <description>Record Type</description>
+        </field>
+        <field>
+          <name>812-02</name>
+          <type>N</type>
+          <position>4</position>
+          <size>2</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>VDA version</description>
+        </field>
+        <field>
+          <name>812-03</name>
+          <type>AN</type>
+          <position>6</position>
+          <size>8</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Invoice number</description>
+        </field>
+        <field>
+          <name>812-04</name>
+          <type>N</type>
+          <position>14</position>
+          <size>6</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Invoice date</description>
+        </field>
+        <field>
+          <name>812-05</name>
+          <type>N</type>
+          <position>20</position>
+          <size>13</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Sales tax amount total</description>
+        </field>
+        <field>
+          <name>812-06</name>
+          <type>N</type>
+          <position>33</position>
+          <size>13</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Total Invoice amount</description>
+        </field>
+        <field>
+          <name>812-07</name>
+          <type>N</type>
+          <position>46</position>
+          <size>3</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Currency (ISO code)</description>
+        </field>
+        <field>
+          <name>812-08</name>
+          <type>AN</type>
+          <position>49</position>
+          <size>10</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Empty</description>
+        </field>
+        <field>
+          <name>812-09</name>
+          <type>N</type>
+          <position>59</position>
+          <size>3</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Sales tax in percent</description>
+        </field>
+        <field>
+          <name>812-10</name>
+          <type>AN</type>
+          <position>62</position>
+          <size>3</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Plant Customer</description>
+        </field>
+        <field>
+          <name>812-11</name>
+          <type>N</type>
+          <position>65</position>
+          <size>13</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Net invoice amount</description>
+        </field>
+        <field>
+          <name>812-12</name>
+          <type>AN</type>
+          <position>78</position>
+          <size>51</size>
+          <mandatory>N	</mandatory>
+          <defaultValue></defaultValue>
+          <description>Filler</description>
+        </field>
+      </fields>
+    </row>
+    <row>
+      <rowName>813</rowName>
+      <mandatory>Y</mandatory>
+      <repetition>1</repetition>
+      <level>1</level>
+      <description>Delivery Data</description>
+      <fields>
+        <field>
+          <name>813-01</name>
+          <type>N</type>
+          <position>1</position>
+          <size>3</size>
+          <mandatory>Y</mandatory>
+          <defaultValue>813</defaultValue>
+          <description>Record Type</description>
+        </field>
+        <field>
+          <name>813-02</name>
+          <type>N</type>
+          <position>4</position>
+          <size>2</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>VDA version</description>
+        </field>
+        <field>
+          <name>813-03</name>
+          <type>N</type>
+          <position>6</position>
+          <size>8</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Delivery note number</description>
+        </field>
+        <field>
+          <name>813-04</name>
+          <type>N</type>
+          <position>14</position>
+          <size>6</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Delivery date</description>
+        </field>
+        <field>
+          <name>813-05</name>
+          <type>AN</type>
+          <position>20</position>
+          <size>5</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Unloading point (ABS)</description>
+        </field>
+        <field>
+          <name>813-06</name>
+          <type>N</type>
+          <position>25</position>
+          <size>2</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Type of dispatch</description>
+        </field>
+        <field>
+          <name>813-07</name>
+          <type>AN</type>
+          <position>27</position>
+          <size>4</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Buyers sign</description>
+        </field>
+        <field>
+          <name>813-08</name>
+          <type>AN</type>
+          <position>31</position>
+          <size>12</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Order number</description>
+        </field>
+        <field>
+          <name>813-09</name>
+          <type>N</type>
+          <position>43</position>
+          <size>13</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Forwarding charges</description>
+        </field>
+        <field>
+          <name>813-10</name>
+          <type>N</type>
+          <position>56</position>
+          <size>13</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Packing charges</description>
+        </field>
+        <field>
+          <name>813-11</name>
+          <type>AN</type>
+          <position>69</position>
+          <size>60</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Filler</description>
+        </field>
+      </fields>
+    </row>
+    <row>
+      <rowName>814</rowName>
+      <mandatory>Y</mandatory>
+      <repetition>1</repetition>
+      <level>2</level>
+      <description>Delivery Note Position</description>
+      <fields>
+        <field>
+          <name>814-01</name>
+          <type>N</type>
+          <position>1</position>
+          <size>3</size>
+          <mandatory>Y</mandatory>
+          <defaultValue>814</defaultValue>
+          <description>Record Type</description>
+        </field>
+        <field>
+          <name>814-02</name>
+          <type>N</type>
+          <position>4</position>
+          <size>2</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>VDA version</description>
+        </field>
+        <field>
+          <name>814-03</name>
+          <type>AN</type>
+          <position>6</position>
+          <size>22</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Material number of customer (MBE)</description>
+        </field>
+        <field>
+          <name>814-04</name>
+          <type>AN</type>
+          <position>28</position>
+          <size>22</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Material number of supplier</description>
+        </field>
+        <field>
+          <name>814-05</name>
+          <type>N</type>
+          <position>50</position>
+          <size>13</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Delivery quantity</description>
+        </field>
+        <field>
+          <name>814-06</name>
+          <type>N</type>
+          <position>63</position>
+          <size>2</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Price unit (VDA table)</description>
+        </field>
+        <field>
+          <name>814-07</name>
+          <type>N</type>
+          <position>65</position>
+          <size>13</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Net unit price</description>
+        </field>
+        <field>
+          <name>814-08</name>
+          <type>N</type>
+          <position>78</position>
+          <size>13</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Net total price</description>
+        </field>
+        <field>
+          <name>814-09</name>
+          <type>AN</type>
+          <position>91</position>
+          <size>3</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Empty</description>
+        </field>
+        <field>
+          <name>814-10</name>
+          <type>AN</type>
+          <position>94</position>
+          <size>3</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Country of origin</description>
+        </field>
+        <field>
+          <name>814-11</name>
+          <type>AN</type>
+          <position>97</position>
+          <size>1</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Tax preference</description>
+        </field>
+        <field>
+          <name>814-12</name>
+          <type>AN</type>
+          <position>98</position>
+          <size>4</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Percentage wholesale</description>
+        </field>
+        <field>
+          <name>814-13</name>
+          <type>AN</type>
+          <position>102</position>
+          <size>1</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Trade preferences</description>
+        </field>
+        <field>
+          <name>814-14</name>
+          <type>AN</type>
+          <position>103</position>
+          <size>26</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Filler</description>
+        </field>
+      </fields>
+    </row>
+    <row>
+      <rowName>819</rowName>
+      <mandatory>Y</mandatory>
+      <repetition>1</repetition>
+      <level>1</level>
+      <description>Trailer Record</description>
+      <fields>
+        <field>
+          <name>819-01</name>
+          <type>N</type>
+          <position>1</position>
+          <size>3</size>
+          <mandatory>Y</mandatory>
+          <defaultValue>819</defaultValue>
+          <description>Record Type</description>
+        </field>
+        <field>
+          <name>819-02</name>
+          <type>N</type>
+          <position>4</position>
+          <size>2</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>VDA version</description>
+        </field>
+        <field>
+          <name>819-03</name>
+          <type>N</type>
+          <position>6</position>
+          <size>7</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Counter record type 811</description>
+        </field>
+        <field>
+          <name>819-04</name>
+          <type>N</type>
+          <position>13</position>
+          <size>7</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Counter record type 812</description>
+        </field>
+        <field>
+          <name>819-05</name>
+          <type>N</type>
+          <position>20</position>
+          <size>7</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Counter record type 813</description>
+        </field>
+        <field>
+          <name>819-06</name>
+          <type>N</type>
+          <position>27</position>
+          <size>7</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Counter record type 814</description>
+        </field>
+        <field>
+          <name>819-07</name>
+          <type>N</type>
+          <position>34</position>
+          <size>7</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Counter record type 819</description>
+        </field>
+        <field>
+          <name>819-08</name>
+          <type>N</type>
+          <position>41</position>
+          <size>13</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Sum of all 812 fields ""Total invoice amount""</description>
+        </field>
+        <field>
+          <name>819-09</name>
+          <type>N</type>
+          <position>54</position>
+          <size>13</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>um of all 812 fields "Net invoice amount" (1)</description>
+        </field>
+        <field>
+          <name>819-10</name>
+          <type>N</type>
+          <position>67</position>
+          <size>13</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Sum of all 812 fields ""Sales tax amount"" (1)</description>
+        </field>
+        <field>
+          <name>819-11</name>
+          <type>N</type>
+          <position>80</position>
+          <size>3</size>
+          <mandatory>Y</mandatory>
+          <defaultValue></defaultValue>
+          <description>Sales tax in percent (1)</description>
+        </field>
+        <field>
+          <name>819-12</name>
+          <type>N</type>
+          <position>83</position>
+          <size>13</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>um of all 812 fields "Net invoice amount" (2)</description>
+        </field>
+        <field>
+          <name>819-13</name>
+          <type>N</type>
+          <position>96</position>
+          <size>13</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Sum of all 812 fields ""Sales tax amount"" (2)</description>
+        </field>
+        <field>
+          <name>819-14</name>
+          <type>N</type>
+          <position>109</position>
+          <size>3</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Sales tax in percent (2)</description>
+        </field>
+        <field>
+          <name>819-15</name>
+          <type>AN</type>
+          <position>112</position>
+          <size>17</size>
+          <mandatory>N</mandatory>
+          <defaultValue></defaultValue>
+          <description>Filler</description>
+        </field>
+      </fields>
+    </row>
+  </rows>
+</vda>
