@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginEdifact", "PluginEdifact\PluginEdifact.csproj", "{7A72F7B5-3E8B-4ACE-98A7-EE5B97DB0053}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDIVisualizer", "EDIVisualizer\EDIVisualizer.csproj", "{931B7ACA-DBC1-4BBB-B1A2-3EF7227536A0}"
@@ -14,6 +16,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginIDoc", "PluginIDoc\PluginIDoc.csproj", "{EB4A6B16-B074-43FA-8581-5DCD7237F34B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginOdette", "PluginOdette\PluginOdette.csproj", "{105351F0-1569-401D-857F-E9F00AECC0C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Screenshots", "Screenshots", "{89A3D2F0-1214-419C-A4A0-95822DACFA78}"
+	ProjectSection(SolutionItems) = preProject
+		Screenshots\edivisualizerScreenshotEdifact.jpg = Screenshots\edivisualizerScreenshotEdifact.jpg
+		Screenshots\edivisualizerScreenshotIDoc.jpg = Screenshots\edivisualizerScreenshotIDoc.jpg
+		Screenshots\edivisualizerScreenshotVDA.jpg = Screenshots\edivisualizerScreenshotVDA.jpg
+		Screenshots\edivisualizerScreenshotXml.jpg = Screenshots\edivisualizerScreenshotXml.jpg
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -110,5 +120,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2416787C-3163-45F6-8778-EAE0ADE108FE}
 	EndGlobalSection
 EndGlobal
