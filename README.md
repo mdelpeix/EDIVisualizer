@@ -2,10 +2,6 @@
 EDIVisualizer is a reader for different files fomats use in EDI (Electronic data interchange).
 EDIVisualizer use Plugin architecture to manage different formats. Actually, plugin are available for EDIFACT and VDA files. New plugins (i hope) will appear in futur (X12, specific formats).
 
-Requirements :
-  - .NET Framework 4
-  - Compilation for x86 platforms
-
 Features :
   - Detect automatically the input file format and load the appropriate plugin
   - Can be launch automatically with file path argument
